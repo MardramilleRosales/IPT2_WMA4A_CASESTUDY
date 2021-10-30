@@ -1,0 +1,119 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>
+            WMA4A-IPT2
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+          td, th{
+            padding-top: 0px;
+             padding-bottom: 0px;
+          }
+        </style>
+        <body>
+          <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+            <button class="nav-link" onclick="goBack()"> BACK </button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+              </script>
+              </li>
+              </li>
+              <li class="nav-item">
+                
+            <a class="nav-link" href="homepage.html"><button> HOME </button></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+
+        <div class="hero-text" style=" width: 60%;">
+          <h1 style="font-size: 60px; text-shadow: 2px 2px #000000; ">Descriptions</h1>
+        <table style="margin-left: 25%;">
+          <tr class="list_names2">
+            <td style="text-align: left; font-size: 90px;">
+             K-nowledgeable
+        </td> 
+          </tr>
+          <tr class="list_names2">
+            <td style="text-align: left; font-size: 90px;">
+             W-armhearted
+        </td> 
+          </tr>
+          <tr class="list_names2">
+            <td style="text-align: left; font-size: 90px;">
+             I-nspiring
+        </td> 
+          </tr>
+          <tr class="list_names2">
+            <td style="text-align: left; font-size: 90px;">
+             N-ice
+        </td> 
+          </tr>
+          <tr class="list_names2">
+            <td style="text-align: left; font-size: 90px;">
+             N-atural
+        </td> 
+          </tr>
+          <tr class="list_names2">
+            <td style="text-align: left; font-size: 90px;">
+             O-ptimistic
+        </td> 
+          </tr>    
+    </table>
+      </div>
+     
+        </div>
+         
+          
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="slideshow/4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="slideshow/2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="slideshow/3.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+        </body>
+    </head>
+</html>
