@@ -1,0 +1,83 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>
+            WMA4A-IPT2
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <body>
+ 
+          <div class="hero-text">
+          <h1 style="font-size: 60px; text-shadow: 2px 2px #000000; ">Integrative Programming Technology II</h1>
+          <div class="list_names2">
+          Members: 
+        </div>
+        <br>
+          <div class="list_names">  
+           <a href="rosales.html">Mardramille Jhon B. Rosales</a>
+        </div>
+          <div class="list_names">
+          <a href="index.html">Margie G. Ordonio</a>
+        </div>
+          <div class="list_names">
+            <a href="abrigo.html">Christian Carlo Abrigo</a>
+        </div>
+          <div class="list_names">
+            <a href="adrian.html">Adrian Abellera</a>
+        </div>
+          <div class="list_names">
+            <a href="sarmiento.html">Jhon Joseph Sarmiento</a>
+        </div>
+        <br>
+        <div class="list_names2">
+          Subject Teacher: 
+        </div>
+        <br>
+        <div class="list_names">
+          <a href="prof.html">Prof. Kwinno Pineda</a>
+      </div>
+        </div>
+         
+          
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="slideshow/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="slideshow/2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="slideshow/3.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+        </body>
+    </head>
+</html>
